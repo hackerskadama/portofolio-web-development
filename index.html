@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Web Developer Portofolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- File CSS Utama -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">
+            <span id="logo-text" class="logo-animated-text"></span>
+        </div>
+       <nav>
+    <ul id="nav-menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="index.html#about">Biodata</a></li>
+        <li><a href="projects.html">Project</a></li>
+        <li><a href="articles.html">Artikel</a></li>
+        
+    </ul>
+</nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- WADAH UTAMA AJAX (KONTEN YANG AKAN BERUBAH DINAMIS) -->
+    <div id="ajax-wrapper">
+
+        <!-- HERO SECTION -->
+        <section class="hero-animated-bg">
+            <div class="hero-content">
+
+                <!-- FOTO LOGO KECIL -->
+                <div style="width: 105px; height: 105px; margin: 15px auto 12px auto; border-radius: 50%; overflow: hidden; border: 3px solid var(--primary-color); box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4); background: rgba(15, 23, 42, 0.8);">
+                    <img src="logo cek.jpeg" alt="Logo Saya" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+
+                <h3 style="font-size: 0.85rem; margin-bottom: 2px; color: var(--text-muted);">Halo, Selamat Datang</h3>
+                <h2 style="font-size: 0.95rem; margin-bottom: 2px; font-weight: 400;">Saya</h2>
+                
+                <!-- NAMA DENGAN ANIMASI KETIK -->
+                <div style="margin: 6px 0 8px 0; text-align: center;">
+                    <h1 style="font-size: 1.1rem; display: inline-block;">
+                        <span class="typing-container typing-name">Satriya Bayuaji Rahmatullah</span>
+                    </h1>
+                </div>
+
+                <h2 style="font-size: 0.9rem; margin-bottom: 8px; font-weight: 500;">Seorang Web Developer</h2>
+                <p style="font-size: 0.78rem; max-width: 500px; margin: 0 auto 15px; line-height: 1.4; color: var(--text-muted);">
+                    Saya fokus merancang dan mengembangkan aplikasi web yang cepat, responsif, dan interaktif.
+                </p>
+
+                <div class="btn-group">
+                    <a href="projects.html" class="btn primary nav-link-ajax">
+                        <i class="fa-solid fa-briefcase"></i> Lihat Project
+                    </a>
+                    <a href="articles.html" class="btn secondary nav-link-ajax">
+                        <i class="fa-solid fa-newspaper"></i> Baca Artikel
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <h2 class="section-title">Tentang <span>Saya</span></h2>
+            <p class="section-subtitle">Mengenal lebih dekat perjalanan dan keahlian saya</p>
+
+            <div class="about-container" style="max-width: 700px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; background: transparent; border: none; box-shadow: none; padding: 0;">
+
+                <!-- FOTO PROFIL (BENTUK VERTIKAL YANG PAS) -->
+                <div style="text-align: center; padding: 5px 0;">
+                    <div style="max-width: 220px; height: 320px; border-radius: 14px; overflow: hidden; margin: 0 auto; border: 3px solid var(--primary-color); box-shadow: 0 8px 25px rgba(56, 189, 248, 0.4); background: transparent;">
+                        <img src="POTO.jpeg" alt="Foto Profil Saya" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                    </div>
+                </div>
+
+                <!-- KOTAK TEKS BIOGRAFI & KEAHLIAN -->
+                <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(56, 189, 248, 0.2); border-radius: 16px; padding: 25px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);">
+                    <h3 style="margin-bottom: 12px; color: var(--primary-color); font-size: 1.05rem; text-align: center;">Pengembang Web Kreatif & Berorientasi Solusi</h3>
+
+                    <p style="margin-bottom: 12px; font-size: 1.07rem; line-height: 1.8; color: var(--text-muted);">
+    Halo, saya <strong>Satriya Bayuaji Rahmatullah</strong>, seorang <em>Junior Web Developer</em>. Saya memiliki pengalaman magang/PKL di <strong>PT Bakti Negara Berkah</strong>, yaitu perusahaan yang bergerak di bidang pelopor aplikasi pemerintahan berbasis <em>open source</em>. Saya berspesialisasi dalam menganalisis kebutuhan dan merancang alur sistem untuk membangun solusi web interaktif menggunakan PHP, Laravel, dan JavaScript.
+</p>
+
+<p style="margin-bottom: 15px; font-size: 1.07rem; line-height: 1.8; color: var(--text-muted);">
+    Berpengalaman dalam merancang dan mengembangkan website dari tahap desain hingga implementasi untuk proyek-proyek skala menengah, dengan selalu memprioritaskan performa, keamanan data, dan kenyamanan pengguna, serta performa website yang ramah pengguna (user friendly).
+</p>
+
+                    <h4 style="font-size: 0.85rem; margin-top: 15px; margin-bottom: 8px; color: var(--text-color);">
+                        Keahlian & Teknologi Utama:</h4>
+                    <div class="skill-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>php</span>
+                        <span>sql</span>
+                        <span>Git & GitHub</span>
+                        <span>konsultasi perancangan</span>
+                    </div>
+                </div>
+
+                <!-- KOTAK FOKUS SAYA -->
+                <div style="background: rgba(15, 23, 42, 0.8); border: 1px solid rgba(56, 189, 248, 0.4); border-radius: 16px; padding: 22px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);">
+                    <h3 style="font-size: 1rem; margin-bottom: 10px; color: var(--primary-color); display: flex; align-items: center; gap: 8px;">
+                        <i class="fa-solid fa-bullseye"></i> Fokus Saya
+                    </h3>
+                    <p style="font-size: 1.07rem; line-height: 1.6; color: var(--text-muted); margin: 0;">
+                        Menggabungkan Analisis Sistem dengan Implementasi. Saya fokus pada membangun solusi web yang efisien dan mudah di akses, mulai dari desain basis data hingga penerapan akhir, dan fokus pada bentuk dan fitur kegunaan nya.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <h2 class="section-title">Hubungi <span>Saya</span></h2>
+            <p class="section-subtitle">Mari terhubung melalui sosial media atau WhatsApp</p>
+
+            <div style="text-align: center;">
+                <p style="color: var(--text-muted); margin-bottom: 15px; font-size: 0.8rem;">Anda dapat langsung menghubungi saya melalui tautan di bawah ini:</p>
+
+                <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+                    <!-- WhatsApp -->
+                    <a href="https://api.whatsapp.com/send/?phone=6289696300447&text&type=phone_number&app_absent=0" target="_blank" class="btn primary"
+                        style="background-color: #25d366; color: white;">
+                        <i class="fa-brands fa-whatsapp" style="font-size: 1rem;"></i> WhatsApp
+                    </a>
+                    
+                    <!-- Email -->
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=satriyabayuaji09@gmail.com" target="_blank" class="btn secondary"
+                        style="border-color: #ea4335; color: #ea4335;">
+                        <i class="fa-solid fa-envelope" style="font-size: 1rem;"></i> Email
+                    </a>
+                    
+                    <!-- GitHub (Baru Ditambahkan) -->
+                    <a href="https://github.com/hackerskadama" target="_blank" class="btn secondary"
+                        style="border-color: #ffffff; color: #ffffff;">
+                        <i class="fa-brands fa-github" style="font-size: 1rem;"></i> GitHub
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://instagram.com" target="_blank" class="btn secondary"
+                        style="border-color: #e1306c; color: #e1306c;">
+                        <i class="fa-brands fa-instagram" style="font-size: 1rem;"></i> Instagram
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </div><!-- END OF AJAX WRAPPER -->
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 PortoFolio. Dibuat bayuaji.</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+    // 1. Toggle menu navigasi untuk tampilan HP (Responsive Menu)
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('nav ul');
+
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Tutup menu saat salah satu link diklik di HP
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+    }
+
+    // 2. Fungsi Efek Ketik Logo Sesuai Halaman yang Dibuka
+    let logoTimer = null;
+
+    function startTypeWriterLogo(targetText) {
+        const logoElement = document.getElementById("logo-text");
+        if (!logoElement) return;
+
+        // Hentikan animasi sebelumnya jika ada agar tidak tumpang tindih
+        if (logoTimer) clearTimeout(logoTimer);
+
+        let iLogo = 0;
+        let isDeletingLogo = false;
+        const speedTyping = 90;
+        const speedDeleting = 70;
+        const delayBetween = 2000;
+
+        function typeLoop() {
+            if (!isDeletingLogo) {
+                logoElement.innerHTML = targetText.substring(0, iLogo + 1);
+                iLogo++;
+                if (iLogo === targetText.length) {
+                    logoTimer = setTimeout(() => { isDeletingLogo = true; typeLoop(); }, delayBetween);
+                    return;
+                }
+            } else {
+                logoElement.innerHTML = targetText.substring(0, iLogo - 1);
+                iLogo--;
+                if (iLogo === 0) {
+                    isDeletingLogo = false;
+                }
+            }
+
+            const currentSpeed = isDeletingLogo ? speedDeleting : speedTyping;
+            logoTimer = setTimeout(typeLoop, currentSpeed);
+        }
+
+        typeLoop();
+    }
+
+    function getLogoTextByUrl(url) {
+        if (url.includes('projects.html')) return "Daftar Project";
+        if (url.includes('articles.html')) return "Daftar Artikel";
+        return "Web Development";
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+        startTypeWriterLogo(getLogoTextByUrl(window.location.href));
+    });
+
+    // 3. SISTEM AJAX HYBRID YANG DISEMPURNAKAN
+    function loadPage(url, pushHistory = true) {
+        const wrapper = document.getElementById('ajax-wrapper');
+        if (!wrapper) {
+            window.location.href = url;
+            return;
+        }
+
+        // Efek transisi halus (fade out)
+        wrapper.style.transition = 'opacity 0.3s ease';
+        wrapper.style.opacity = '0';
+
+        fetch(url)
+            .then(response => {
+                if (!response.ok) throw new Error('Halaman tidak ditemukan');
+                return response.text();
+            })
+            .then(html => {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                const newContent = doc.getElementById('ajax-wrapper');
+
+                setTimeout(() => {
+                    if (newContent) {
+                        wrapper.innerHTML = newContent.innerHTML;
+                    } else {
+                        wrapper.innerHTML = doc.body.innerHTML;
+                    }
+                    wrapper.style.opacity = '1';
+
+                    if (pushHistory) {
+                        window.history.pushState({path: url}, '', url);
+                    }
+                    window.scrollTo(0, 0); // Kembalikan posisi scroll ke atas
+                    
+                    // Jalankan ulang animasi ketik logo sesuai halaman baru
+                    startTypeWriterLogo(getLogoTextByUrl(url));
+                }, 300);
+            })
+            .catch(err => {
+                wrapper.style.opacity = '1';
+                window.location.href = url; // Fallback jika gagal fetch
+            });
+    }
+
+    // Tangkap klik pada semua tag <a> di menu/halaman secara otomatis
+    document.addEventListener('click', function(e) {
+        const link = e.target.closest('a');
+        if (!link) return;
+
+        const url = link.getAttribute('href');
+        // Abaikan link eksternal, hashtag dalam halaman, atau mailto
+        if (!url || url.startsWith('#') || url.startsWith('http') || url.startsWith('mailto:')) return;
+
+        e.preventDefault();
+        loadPage(url, true);
+    });
+
+    // Handle tombol Back / Forward pada browser
+    window.addEventListener('popstate', function() {
+        loadPage(window.location.href, false);
+        startTypeWriterLogo(getLogoTextByUrl(window.location.href));
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name=<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Artikel - Portofolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- File CSS Utama -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">
+            <span id="logo-text" class="logo-animated-text"></span>
+        </div>
+        <nav>
+    <ul id="nav-menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="index.html#about">Biodata</a></li>
+        <li><a href="projects.html">Project</a></li>
+        <li><a href="articles.html">Artikel</a></li>
+        
+    </ul>
+</nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- WADAH UTAMA AJAX (KONTEN YANG AKAN BERUBAH DINAMIS) -->
+    <div id="ajax-wrapper">
+
+        <!-- SECTION 1 KARTU UTAMA KE BLOG -->
+        <section style="padding: 60px 20px; min-height: 70vh; display: flex; align-items: center; justify-content: center;">
+            <div style="max-width: 650px; width: 100%; text-align: center;">
+                
+                <div class="about-container" style="padding: 40px 30px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);">
+                    
+                    <div style="font-size: 3rem; color: var(--primary-color); margin-bottom: 20px;">
+                        <i class="fa-solid fa-blog"></i>
+                    </div>
+
+                    <h2 style="font-size: 1.6rem; color: var(--text-color); margin-bottom: 15px; font-weight: 700; letter-spacing: 0.5px;">
+                        Eksplorasi Artikel & Catatan Tech
+                    </h2>
+
+                    <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 30px; line-height: 1.6;">
+                        Temukan berbagai kumpulan tutorial pengembangan web, tips pemrograman, serta berbagai wawasan teknologi terbaru langsung dari blog pribadi saya.
+                    </p>
+
+                    <div>
+                        <a href="https://www.blogger.com/u/1/blog/posts/5374333025985806125" target="_blank" class="btn primary" style="padding: 12px 28px; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 10px;">
+                            Kunjungi Blog Saya <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </div><!-- END OF AJAX WRAPPER -->
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 PortoFolio. Dibuat bayuaji.</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Toggle menu navigasi untuk tampilan HP
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Tutup menu saat link diklik di HP
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // --- EFEK KETIK LOGO "Daftar Artikel" (LOOPING & EFEK SILAU) ---
+        const textLogo = "Daftar Artikel";
+        let iLogo = 0;
+        let isDeletingLogo = false;
+        const speedTyping = 90;   
+        const speedDeleting = 50; 
+        const delayBetween = 2000; 
+
+        function loopTypeWriterLogo() {
+            const logoElement = document.getElementById("logo-text");
+            if (!logoElement) return;
+
+            if (!isDeletingLogo) {
+                logoElement.innerHTML = textLogo.substring(0, iLogo + 1);
+                iLogo++;
+                if (iLogo === textLogo.length) {
+                    setTimeout(() => { isDeletingLogo = true; }, delayBetween);
+                }
+            } else {
+                logoElement.innerHTML = textLogo.substring(0, iLogo - 1);
+                iLogo--;
+                if (iLogo === 0) {
+                    isDeletingLogo = false;
+                }
+            }
+
+            const currentSpeed = isDeletingLogo ? speedDeleting : speedTyping;
+            setTimeout(loopTypeWriterLogo, currentSpeed);
+        }
+
+        window.addEventListener("DOMContentLoaded", () => {
+            loopTypeWriterLogo();
+        });
+
+        // --- SISTEM AJAX HYBRID DENGAN ANIMASI FADE-OUT & FADE-IN ---
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+
+                // Abaikan anchor, link eksternal (blogger.com), dll.
+                if (!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('url?')) {
+                    return;
+                }
+
+                e.preventDefault();
+                const wrapper = document.getElementById('ajax-wrapper');
+                
+                if (!wrapper) {
+                    window.location.href = href;
+                    return;
+                }
+
+                wrapper.style.transition = 'opacity 0.3s ease-in-out';
+                wrapper.style.opacity = '0';
+
+                fetch(href)
+                    .then(response => {
+                        if (!response.ok) throw new Error('Halaman tidak ditemukan');
+                        return response.text();
+                    })
+                    .then(html => {
+                        const parser = new DOMParser();
+                        const doc = parser.parseFromString(html, 'text/html');
+                        const newContent = doc.getElementById('ajax-wrapper');
+
+                        setTimeout(() => {
+                            if (newContent) {
+                                wrapper.innerHTML = newContent.innerHTML;
+                            } else {
+                                wrapper.innerHTML = doc.body.innerHTML;
+                            }
+                            
+                            wrapper.style.opacity = '1';
+                            window.history.pushState({path: href}, '', href);
+                            window.scrollTo(0, 0);
+                        }, 300);
+                    })
+                    .catch(err => {
+                        wrapper.style.opacity = '1';
+                        window.location.href = href;
+                    });
+            });
+        });
+    </script>
+</body>
+
+</html>

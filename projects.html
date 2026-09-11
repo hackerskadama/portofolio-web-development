@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Satriya Bayuaji Rahmatullah</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- File CSS Utama -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">
+            <span id="logo-text" class="logo-animated-text"></span>
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="index.html#about">Biodata</a></li>
+                <li><a href="projects.html" class="active">Project</a></li>
+                <li><a href="articles.html">Artikel</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- WADAH UTAMA AJAX (KONTEN YANG AKAN BERUBAH DINAMIS) -->
+    <div id="ajax-wrapper">
+
+        <!-- SECTION PROYEK -->
+        <section style="padding: 40px 20px;">
+            <h2 class="section-title">Semua <span>Project Saya</span></h2>
+            <p class="section-subtitle">Berikut adalah kumpulan proyek web development yang telah saya buat.</p>
+
+            <!-- KOTAK/GRID PROYEK -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 20px; max-width: 1000px; margin-left: auto; margin-right: auto;">
+
+                <!-- Proyek Baru: TrackPlan -->
+                <div class="about-container" style="padding: 25px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="font-size: 2.2rem; color: var(--primary-color); margin-bottom: 12px;">
+                            <i class="fa-solid fa-clipboard-list"></i>
+                        </div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 8px; color: var(--text-color);">TrackPlan (Manajemen Proyek)</h3>
+                        <p style="font-size: 1.05rem; color: var(--text-muted); margin-bottom: 15px; line-height: 1.8;">
+                            Platform web sistem manajemen dan pelacakan perencanaan proyek interaktif untuk mempermudah pemantauan tugas secara online.
+                        </p>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.85rem; color: var(--primary-color); margin-bottom: 15px; font-weight: 500;">PHP | MySQL | Web App</div>
+                        <a href="https://trackplan.wuaze.com/login.html" target="_blank" class="btn primary" style="padding: 8px 18px; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Kunjungi Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Proyek 1: Website Keuangan -->
+                <div class="about-container" style="padding: 25px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="font-size: 2.2rem; color: var(--primary-color); margin-bottom: 12px;">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 8px; color: var(--text-color);">Website Keuangan</h3>
+                        <p style="font-size: 1.05rem; color: var(--text-muted); margin-bottom: 15px; line-height: 1.8;">
+                            Sistem manajemen dan pencatatan keuangan berbasis web untuk memantau transaksi secara online.
+                        </p>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.85rem; color: var(--primary-color); margin-bottom: 15px; font-weight: 500;">PHP | MySQL</div>
+                        <a href="https://website-keuangan.kesug.com/login.php?i=1" target="_blank" class="btn primary" style="padding: 8px 18px; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Kunjungi Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Proyek 2: CRUD Pendaftaran Karang Taruna -->
+                <div class="about-container" style="padding: 25px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="font-size: 2.2rem; color: var(--primary-color); margin-bottom: 12px;">
+                            <i class="fa-solid fa-users-rectangle"></i>
+                        </div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 8px; color: var(--text-color);">CRUD Pendaftaran Karang Taruna</h3>
+                        <p style="font-size: 1.05rem; color: var(--text-muted); margin-bottom: 15px; line-height: 1.8;">
+                            Aplikasi web sistem pendataan dan pendaftaran anggota organisasi dengan fitur lengkap Create, Read, Update, Delete.
+                        </p>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.85rem; color: var(--primary-color); margin-bottom: 15px; font-weight: 500;">PHP | Database Management</div>
+                        <a href="https://pendaftaran-karang-taruna.infinityfree.io/" target="_blank" class="btn primary" style="padding: 8px 18px; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Kunjungi Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Proyek 3: Website Top Up Game Laravel & AJAX -->
+                <div class="about-container" style="padding: 25px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="font-size: 2.2rem; color: var(--primary-color); margin-bottom: 12px;">
+                            <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 8px; color: var(--text-color);">Website Top Up Game</h3>
+                        <p style="font-size: 1.05rem; color: var(--text-muted); margin-bottom: 15px; line-height: 1.8;">
+                            Platform top up voucher game interaktif yang dibangun menggunakan framework Laravel dan asynchronous AJAX request.
+                        </p>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.85rem; color: var(--primary-color); margin-bottom: 15px; font-weight: 500;">Laravel | AJAX | JavaScript</div>
+                        <a href="https://topup-game.gamer.gd/topup?i=1" target="_blank" class="btn primary" style="padding: 8px 18px; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Kunjungi Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Proyek 4: Portofolio Prestasi -->
+                <div class="about-container" style="padding: 25px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="font-size: 2.2rem; color: var(--primary-color); margin-bottom: 12px;">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 8px; color: var(--text-color);">Portofolio Prestasi</h3>
+                        <p style="font-size: 1.05rem; color: var(--text-muted); margin-bottom: 15px; line-height: 1.8;">
+                            Website portofolio pribadi pertama yang menampilkan berbagai rekam jejak, karya, dan prestasi yang diraih.
+                        </p>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.85rem; color: var(--primary-color); margin-bottom: 15px; font-weight: 500;">HTML | CSS | JavaScript</div>
+                        <a href="https://hackerskadama.github.io/web-portofolio-pertama/" target="_blank" class="btn primary" style="padding: 8px 18px; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Kunjungi Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div><!-- END OF AJAX WRAPPER -->
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 PortoFolio. Dibuat bayuaji.</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Toggle menu navigasi untuk tampilan HP
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        if (mobileMenu && navMenu) {
+            mobileMenu.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+
+            document.querySelectorAll('nav ul li a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                });
+            });
+        }
+
+        // Fungsi Efek Ketik Logo Sesuai Halaman yang Dibuka
+        let logoTimer = null;
+
+        function startTypeWriterLogo(targetText) {
+            const logoElement = document.getElementById("logo-text");
+            if (!logoElement) return;
+
+            if (logoTimer) clearTimeout(logoTimer);
+
+            let iLogo = 0;
+            let isDeletingLogo = false;
+            const speedTyping = 90;
+            const speedDeleting = 50;
+            const delayBetween = 2000;
+
+            function typeLoop() {
+                if (!isDeletingLogo) {
+                    logoElement.innerHTML = targetText.substring(0, iLogo + 1);
+                    iLogo++;
+                    if (iLogo === targetText.length) {
+                        logoTimer = setTimeout(() => { isDeletingLogo = true; typeLoop(); }, delayBetween);
+                        return;
+                    }
+                } else {
+                    logoElement.innerHTML = targetText.substring(0, iLogo - 1);
+                    iLogo--;
+                    if (iLogo === 0) {
+                        isDeletingLogo = false;
+                    }
+                }
+
+                const currentSpeed = isDeletingLogo ? speedDeleting : speedTyping;
+                logoTimer = setTimeout(typeLoop, currentSpeed);
+            }
+
+            typeLoop();
+        }
+
+        function getLogoTextByUrl(url) {
+            if (url.includes('projects.html')) return "Daftar Project";
+            if (url.includes('articles.html')) return "Daftar Artikel";
+            return "Web Development";
+        }
+
+        window.addEventListener("DOMContentLoaded", () => {
+            startTypeWriterLogo(getLogoTextByUrl(window.location.href));
+        });
+
+        // SISTEM AJAX HYBRID MENGGUNAKAN EVENT DELEGATION (AGAR AMAN DI SEMUA HALAMAN)
+        function loadPage(url, pushHistory = true) {
+            const wrapper = document.getElementById('ajax-wrapper');
+            if (!wrapper) {
+                window.location.href = url;
+                return;
+            }
+
+            wrapper.style.transition = 'opacity 0.3s ease-in-out';
+            wrapper.style.opacity = '0';
+
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) throw new Error('Halaman tidak ditemukan');
+                    return response.text();
+                })
+                .then(html => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    const newContent = doc.getElementById('ajax-wrapper');
+
+                    setTimeout(() => {
+                        if (newContent) {
+                            wrapper.innerHTML = newContent.innerHTML;
+                        } else {
+                            wrapper.innerHTML = doc.body.innerHTML;
+                        }
+                        
+                        wrapper.style.opacity = '1';
+                        if (pushHistory) {
+                            window.history.pushState({path: url}, '', url);
+                        }
+                        window.scrollTo(0, 0);
+                        startTypeWriterLogo(getLogoTextByUrl(url));
+                    }, 300);
+                })
+                .catch(err => {
+                    wrapper.style.opacity = '1';
+                    window.location.href = url;
+                });
+        }
+
+        // Event delegation untuk menangkap seluruh klik menu/link lokal
+        document.addEventListener('click', function(e) {
+            const link = e.target.closest('a');
+            if (!link) return;
+
+            const href = link.getAttribute('href');
+            if (!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto:')) {
+                return;
+            }
+
+            e.preventDefault();
+            loadPage(href, true);
+        });
+
+        // Handle tombol Back/Forward browser
+        window.addEventListener('popstate', function() {
+            loadPage(window.location.href, false);
+            startTypeWriterLogo(getLogoTextByUrl(window.location.href));
+        });
+    </script>
+</body>
+
+</html>
