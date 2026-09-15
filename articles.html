@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name=<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Artikel - Portofolio</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -21,46 +21,405 @@
             <span id="logo-text" class="logo-animated-text"></span>
         </div>
         <nav>
-    <ul id="nav-menu">
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="index.html#about">Biodata</a></li>
-        <li><a href="projects.html">Project</a></li>
-        <li><a href="articles.html">Artikel</a></li>
-        
-    </ul>
-</nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="index.html#about">Biodata</a></li>
+                <li><a href="projects.html">Project</a></li>
+                <li><a href="articles.html" class="active">Artikel</a></li>
+            </ul>
+        </nav>
         <div class="menu-toggle" id="mobile-menu">
             <i class="fa-solid fa-bars"></i>
         </div>
     </header>
 
-    <!-- WADAH UTAMA AJAX (KONTEN YANG AKAN BERUBAH DINAMIS) -->
+    <!-- WADAH UTAMA AJAX -->
     <div id="ajax-wrapper">
 
-        <!-- SECTION 1 KARTU UTAMA KE BLOG -->
-        <section style="padding: 60px 20px; min-height: 70vh; display: flex; align-items: center; justify-content: center;">
-            <div style="max-width: 650px; width: 100%; text-align: center;">
-                
-                <div class="about-container" style="padding: 40px 30px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);">
-                    
-                    <div style="font-size: 3rem; color: var(--primary-color); margin-bottom: 20px;">
-                        <i class="fa-solid fa-blog"></i>
+        <!-- SECTION DAFTAR ARTIKEL -->
+        <section style="padding: 40px 20px; max-width: 900px; margin: 0 auto; min-height: 70vh;">
+            <h2 class="section-title">Daftar <span>Artikel & Tutorial</span></h2>
+            <p class="section-subtitle">Catatan harian, dokumentasi error, dan langkah-langkah praktis seputar pemrograman yang saya rangkum selama proses ngoding.</p>
+
+            <!-- KUMPULAN KARTU ARTIKEL (LENGKAP SEMUA) -->
+            <div style="display: flex; flex-direction: column; gap: 20px; margin-top: 30px;">
+
+                <!-- 1 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> Simulasi Elektronik</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Cara Gampang Simulasi Rangkaian Arduino Wokwi Lewat VS Code</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Panduan praktis membuat folder proyek baru di PlatformIO untuk menguji rangkaian elektronik secara online.</p>
                     </div>
-
-                    <h2 style="font-size: 1.6rem; color: var(--text-color); margin-bottom: 15px; font-weight: 700; letter-spacing: 0.5px;">
-                        Eksplorasi Artikel & Catatan Tech
-                    </h2>
-
-                    <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 30px; line-height: 1.6;">
-                        Temukan berbagai kumpulan tutorial pengembangan web, tips pemrograman, serta berbagai wawasan teknologi terbaru langsung dari blog pribadi saya.
-                    </p>
-
                     <div>
-                        <a href="https://www.blogger.com/u/1/blog/posts/5374333025985806125" target="_blank" class="btn primary" style="padding: 12px 28px; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 10px;">
-                            Kunjungi Blog Saya <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/05/cara-gampang-simulasi-rangkaian-arduino.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
+                </div>
 
+                <!-- 2 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> Git & Repository</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Cara Push Kode ke Repository yg Sudah Ada</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Panduan melakukan sinkronisasi dan push source code project ke repository GitHub.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/05/cara-push-kode-ke-repository-yg-sudah.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> Web Server</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Cara Instalasi Laragon</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Langkah-langkah mudah memasang dan mengkonfigurasi Laragon untuk local development.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/05/cara-instalasi-laraggon.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> Laravel</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Cara Instalasi dan Membuat Project Baru</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Panduan dasar menyiapkan framework Laravel dari instalasi Composer hingga project pertama.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/05/cara-instalasi-dan-membuat-project-baru.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> HTML Dasar</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Kegunaan Text HTML</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Mengenal berbagai macam tag dan text HTML utama untuk membangun kerangka halaman web.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/06/kegunaan-text-html.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> Styling Web</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Cara Menambahkan Bootstrap dan CSS di Web</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Cara mengintegrasikan framework Bootstrap serta CSS custom agar tampilan website lebih menarik.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/06/cara-menambahkan-boostrap-dan-css-di.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 7 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> Database</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Tutorial Membuat Database dan Tabel</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Panduan dasar pengelolaan database MySQL menggunakan phpMyAdmin.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/06/tutorial-membuat-database-dan.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 8 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> Networking / Tools</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Cara Mengonline-kan Website dengan Ngrok</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Cara cepat melakukan port forwarding project lokal agar dapat diakses secara publik.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/06/cara-mengonline-kan-website-dengan-ngrok.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 9 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> Git & GitHub</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Membuat Repositori dan Memublikasikan Kode</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Langkah awal membuat repository baru di GitHub dan mengunggah project code pertama kali.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/06/membuat-repositori-dan-memublikasikan.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 10 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> Deployment</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Cara Mengonline-kan Website di Vercel</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Tutorial praktis hosting web statis atau frontend gratis dan cepat melalui platform Vercel.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/06/cara-mengonline-kan-website-di-vercel.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 11 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> Deployment</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Cara Mudah Deploy Website ke Cloudflare</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Memanfaatkan Cloudflare Pages untuk mendeploy website dengan performa cepat dan aman.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/06/cara-mudah-deploy-website-ke-cloudflare.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 12 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> Fitur Aplikasi</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Cara Menambahkan Fitur Cetak PDF</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Implementasi fungsi cetak dokumen atau laporan ke format PDF langsung dari halaman web.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/06/cara-menambahkan-fitur-cetak-pdf.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 13 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> Fitur Aplikasi</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Menambahkan Tanda Tangan Digital pada Website</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Tutorial membuat fitur input tanda tangan digital interaktif berbasis HTML canvas.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/06/menambahkan-tanda-tangan-digital-pada.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 14 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> Database Project</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Cara Membuat Database Website Manajemen</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Perancangan struktur tabel relasional untuk membangun aplikasi sistem manajemen.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/06/cara-membuat-database-website-manajemen.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 15 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> Hosting</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Cara Hosting Web PHP MySQL di Internet</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Panduan mengunggah source code PHP native beserta database ke server hosting publik.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/07/cara-hosting-web-php-mysql-di.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 16 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> Laravel</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Cara Installasi Laravel</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Persyaratan sistem dan tahapan instalasi framework Laravel lengkap untuk pemula.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/07/cara-installasi-laravel.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 17 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> Database & Transaksi</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Membuat Database Tabel Transaksi dengan Relasi</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Panduan mendesain tabel database khusus untuk sistem pencatatan transaksi keuangan.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/07/membuat-database-tabel-transaksi-dengan.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 18 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> Laravel Commands</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Istilah Perintah dalam Laravel</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Kumpulan perintah Artisan CLI yang paling sering digunakan saat development Laravel.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/07/istilah-perintah-dalam-laravel.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 19 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> AJAX & Upload</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Menerapkan AJAX Request untuk Upload</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Cara mengunggah file atau gambar tanpa perlu me-refresh halaman menggunakan AJAX.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/07/menerapkan-ajax-request-untuk-upload.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 20 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> Tips & Tricks</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Menjalankan Server & Membersihkan Cache</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Tips mengatasi error umum pada project web dengan membersihkan cache aplikasi.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/07/menjalankan-server-membersihkan-cache.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 21 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> Docker</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Apa Itu Docker Desktop?</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Pengenalan dasar mengenai teknologi kontainerisasi aplikasi menggunakan Docker.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/08/apa-itu-docker-dekstop.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 22 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> Docker & WSL 2</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Instalasi Docker Desktop WSL 2 di Windows</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Panduan konfigurasi dan instalasi Docker Desktop berbasis WSL 2 di sistem operasi Windows.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/08/instalasi-docker-desktop-wsl-2-di.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 23 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> XAMPP</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Cara Instal & Menjalankan XAMPP</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Langkah mudah menyalakan Apache dan MySQL melalui control panel XAMPP.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/08/cara-instal-menjalankan-xampp.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 24 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> WordPress</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Menambahkan dan Menghubungkan WordPress</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Panduan dasar menghubungkan dan mengatur sistem CMS WordPress pada server lokal.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/08/menambahkan-dan-menghubungkan-wordpress.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 25 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> PWA</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Apa Itu PWA (Progressive Web App)?</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Mengenal teknologi PWA agar website dapat diinstal dan diakses layaknya aplikasi mobile.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/08/apa-itu-pwa.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 26 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> Google Apps Script</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Pengertian Google Apps Script</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Mengenal fungsi dasar pemrograman berbasis awan untuk otomatisasi Google Workspace.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/08/pengertian-gogle-apps-script.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 27 -->
+                <div class="about-container" style="padding: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <span style="font-size: 0.78rem; color: var(--primary-color); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i> SEO</span>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-color); font-weight: 600;">Cara Membuat Website Muncul di Google</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Tips dasar optimasi SEO dan indeks mesin pencari agar website Anda bisa ditemukan di Google.</p>
+                    </div>
+                    <div>
+                        <a href="https://pklskadamaa1.blogspot.com/2026/08/cara-membuat-website-muncul-di-google.html" target="_blank" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+                            Baca Artikel <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
                 </div>
 
             </div>
@@ -75,103 +434,126 @@
 
     <!-- JAVASCRIPT -->
     <script>
-        // Toggle menu navigasi untuk tampilan HP
         const mobileMenu = document.getElementById('mobile-menu');
         const navMenu = document.getElementById('nav-menu');
 
-        mobileMenu.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-
-        // Tutup menu saat link diklik di HP
-        document.querySelectorAll('nav ul li a').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
+        if (mobileMenu && navMenu) {
+            mobileMenu.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
             });
-        });
 
-        // --- EFEK KETIK LOGO "Daftar Artikel" (LOOPING & EFEK SILAU) ---
-        const textLogo = "Daftar Artikel";
-        let iLogo = 0;
-        let isDeletingLogo = false;
-        const speedTyping = 90;   
-        const speedDeleting = 50; 
-        const delayBetween = 2000; 
+            document.querySelectorAll('nav ul li a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                });
+            });
+        }
 
-        function loopTypeWriterLogo() {
+        let logoTimer = null;
+
+        function startTypeWriterLogo(targetText) {
             const logoElement = document.getElementById("logo-text");
             if (!logoElement) return;
 
-            if (!isDeletingLogo) {
-                logoElement.innerHTML = textLogo.substring(0, iLogo + 1);
-                iLogo++;
-                if (iLogo === textLogo.length) {
-                    setTimeout(() => { isDeletingLogo = true; }, delayBetween);
+            if (logoTimer) clearTimeout(logoTimer);
+
+            let iLogo = 0;
+            let isDeletingLogo = false;
+            const speedTyping = 90;   
+            const speedDeleting = 50; 
+            const delayBetween = 2000; 
+
+            function typeLoop() {
+                if (!isDeletingLogo) {
+                    logoElement.innerHTML = targetText.substring(0, iLogo + 1);
+                    iLogo++;
+                    if (iLogo === targetText.length) {
+                        logoTimer = setTimeout(() => { isDeletingLogo = true; typeLoop(); }, delayBetween);
+                        return;
+                    }
+                } else {
+                    logoElement.innerHTML = targetText.substring(0, iLogo - 1);
+                    iLogo--;
+                    if (iLogo === 0) {
+                        isDeletingLogo = false;
+                    }
                 }
-            } else {
-                logoElement.innerHTML = textLogo.substring(0, iLogo - 1);
-                iLogo--;
-                if (iLogo === 0) {
-                    isDeletingLogo = false;
-                }
+
+                const currentSpeed = isDeletingLogo ? speedDeleting : speedTyping;
+                logoTimer = setTimeout(typeLoop, currentSpeed);
             }
 
-            const currentSpeed = isDeletingLogo ? speedDeleting : speedTyping;
-            setTimeout(loopTypeWriterLogo, currentSpeed);
+            typeLoop();
+        }
+
+        function getLogoTextByUrl(url) {
+            if (url.includes('projects.html')) return "Daftar Project";
+            if (url.includes('articles.html')) return "Daftar Artikel";
+            return "Web Development";
         }
 
         window.addEventListener("DOMContentLoaded", () => {
-            loopTypeWriterLogo();
+            startTypeWriterLogo(getLogoTextByUrl(window.location.href));
         });
 
-        // --- SISTEM AJAX HYBRID DENGAN ANIMASI FADE-OUT & FADE-IN ---
-        document.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', function(e) {
-                const href = this.getAttribute('href');
+        // --- SISTEM AJAX HYBRID ---
+        function loadPage(url, pushHistory = true) {
+            const wrapper = document.getElementById('ajax-wrapper');
+            if (!wrapper) {
+                window.location.href = url;
+                return;
+            }
 
-                // Abaikan anchor, link eksternal (blogger.com), dll.
-                if (!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('url?')) {
-                    return;
-                }
+            wrapper.style.transition = 'opacity 0.3s ease-in-out';
+            wrapper.style.opacity = '0';
 
-                e.preventDefault();
-                const wrapper = document.getElementById('ajax-wrapper');
-                
-                if (!wrapper) {
-                    window.location.href = href;
-                    return;
-                }
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) throw new Error('Halaman tidak ditemukan');
+                    return response.text();
+                })
+                .then(html => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    const newContent = doc.getElementById('ajax-wrapper');
 
-                wrapper.style.transition = 'opacity 0.3s ease-in-out';
-                wrapper.style.opacity = '0';
-
-                fetch(href)
-                    .then(response => {
-                        if (!response.ok) throw new Error('Halaman tidak ditemukan');
-                        return response.text();
-                    })
-                    .then(html => {
-                        const parser = new DOMParser();
-                        const doc = parser.parseFromString(html, 'text/html');
-                        const newContent = doc.getElementById('ajax-wrapper');
-
-                        setTimeout(() => {
-                            if (newContent) {
-                                wrapper.innerHTML = newContent.innerHTML;
-                            } else {
-                                wrapper.innerHTML = doc.body.innerHTML;
-                            }
-                            
-                            wrapper.style.opacity = '1';
-                            window.history.pushState({path: href}, '', href);
-                            window.scrollTo(0, 0);
-                        }, 300);
-                    })
-                    .catch(err => {
+                    setTimeout(() => {
+                        if (newContent) {
+                            wrapper.innerHTML = newContent.innerHTML;
+                        } else {
+                            wrapper.innerHTML = doc.body.innerHTML;
+                        }
+                        
                         wrapper.style.opacity = '1';
-                        window.location.href = href;
-                    });
-            });
+                        if (pushHistory) {
+                            window.history.pushState({path: url}, '', url);
+                        }
+                        window.scrollTo(0, 0);
+                        startTypeWriterLogo(getLogoTextByUrl(url));
+                    }, 300);
+                })
+                .catch(err => {
+                    wrapper.style.opacity = '1';
+                    window.location.href = url;
+                });
+        }
+
+        document.addEventListener('click', function(e) {
+            const link = e.target.closest('a');
+            if (!link) return;
+
+            const href = link.getAttribute('href');
+            if (!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto:')) {
+                return;
+            }
+
+            e.preventDefault();
+            loadPage(href, true);
+        });
+
+        window.addEventListener('popstate', function() {
+            loadPage(window.location.href, false);
+            startTypeWriterLogo(getLogoTextByUrl(window.location.href));
         });
     </script>
 </body>
